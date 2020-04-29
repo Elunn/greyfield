@@ -111,7 +111,7 @@ video {
 	justify-content: space-around;
 	height: 3em;
 	align-items: center;
-	padding-bottom: 2em;
+	padding-bottom: 5em;
 }
 
 
@@ -190,6 +190,13 @@ video {
 #mute.off:before {
 	content: '\f6a9';
 	font-family: 'Font Awesome 5 Free';
+}
+
+
+@media all and (min-width: 660px) { 
+    #playGroup {
+		padding-bottom: 2em;
+	}
 }
 
 
