@@ -192,10 +192,42 @@ video {
 	font-family: 'Font Awesome 5 Free';
 }
 
+.pdf {
+	color: #fff;
+}
+
+.pdf:hover {
+	color: #FEC8EE;
+}
+
+.pdf:before {
+	padding: 2em 0 1em 1em;
+	content: '\f56d';
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 30px;
+	font-weight: 900;
+    display: inline-block;
+    font-size: 28px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+	cursor: pointer;
+}
+
+.pdf:after:hover {
+	content: '\f56d';
+	color: #FEC8EE; 
+	font-family: 'Font Awesome 5 Free';
+}
+
 
 @media all and (min-width: 660px) { 
     #playGroup {
 		padding-bottom: 2em;
+	}
+	
+	.pdf:before {
+		padding-top: 1em;
 	}
 }
 
