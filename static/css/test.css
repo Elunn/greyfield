@@ -42,9 +42,15 @@ a:hover {
 }
 
 main {
-	width: 80%;
-	float: right;
-	
+	padding-top: 1em;
+	width: 100%;
+	float: right;	
+}
+
+@media all and (min-width: 770px) { 
+	main {
+	width: 80%;	
+}
 }
 
 /*nav bar*/
@@ -190,8 +196,9 @@ ul li:nth-child(4) {
 /*------------page*/
 
 .flowDi {
-	width: 80%;
+	width: 100%;
 	margin: auto;
+	padding-top: 10vh;
 }
 
 .st0{fill:none;stroke:#707070;stroke-width:2;}
@@ -223,6 +230,15 @@ ul li:nth-child(4) {
 
 text {
 	font-family: 'Varela Round', sans-serif;
+}
+
+@media all and (min-width: 770px) { 
+	.flowDi {
+		width: 80%;
+		margin: auto;
+		padding-top: 10vh;
+	}
+
 }
 
 
