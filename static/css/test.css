@@ -156,7 +156,7 @@ ul li:nth-child(3) {
 	animation-delay: .6s;
 }
 
-ul li:nth-child(3) a {
+ul li:nth-child(2) a {
 	color: var(--project-red);
 }
 
