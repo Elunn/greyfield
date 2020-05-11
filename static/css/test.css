@@ -232,6 +232,19 @@ text {
 	font-family: 'Varela Round', sans-serif;
 }
 
+.path {
+	stroke: #000;
+	stroke-dasharray: 10;
+	animation: dash 20s linear infinite;
+	fill: none;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
 @media all and (min-width: 770px) { 
 	.flowDi {
 		width: 80%;
@@ -240,6 +253,8 @@ text {
 	}
 
 }
+
+
 
 
 
