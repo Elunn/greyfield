@@ -66,3 +66,26 @@ window.onload = function () {
     }
   });
 }
+
+function toggleDocs(event) {
+
+    if (event.target && event.target.className == 'menuControl') {
+
+        var next = event.target.nextElementSibling;
+		var parent = event.target.parentElement;
+		
+
+
+        if (next.classList.contains ('hide')) {
+            next.classList.remove("hide");
+			parent.classList.add("iconClose");
+			
+
+        } else {
+            next.classList.add("hide");
+			parent.classList.remove("iconClose");
+        }
+    }
+}
+
+document.addEventListener('click', toggleDocs, true);
