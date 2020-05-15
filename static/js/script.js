@@ -71,27 +71,28 @@ window.onload = function () {
 
 function toggleDocs(event) {
 
-    if (event.target && event.target.className == 'sectionTab') {
-
-		var parent = event.target.parentElement;
-		var video = document.querySelector('.video');
-		var how = document.querySelector('.how');
-		var contact = document.querySelector('.contact');
+    if (event.target && event.target.className == 'sectionTab') { 
+		var parent = event.target.parentElement,
+			how = document.querySelector('.how'),
+			contact = document.querySelector('.contact'),
+			play = document.getElementById('playPause'),
+			video = document.getElementById('video');
 		
         if (parent.classList.contains('video')) {
-            console.log('video');
 			how.classList.add("close");
 			contact.classList.add("close");
         } 
 		else if (parent.classList.contains('how')){
-			console.log('how');	
 			how.classList.remove("close");
 			contact.classList.add("close");
+			video.pause();
+			play.className = 'play';
 		} 
 		else if (parent.classList.contains('contact')){
-			console.log('contact');
 			how.classList.remove("close");
 			contact.classList.remove("close");
+			video.pause();
+			play.className = 'play';
 		}
     };
 	
