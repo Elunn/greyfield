@@ -1,4 +1,8 @@
-/*------------global*/
+/*----------global styles----------*/
+
+* {
+	box-sizing: border-box;
+}
 
 :root {
 	font-family: 'Open Sans', sans-serif;
@@ -6,7 +10,9 @@
 	line-height: 18px;
 	--project-pink: #FEC8EE;
 	--project-red: #FE3D00;
-	--project-grey-one: #A6A4A1;
+	--project-brown: #C0A688;
+	--project-grey-one: #E5E1E4;
+	--project-grey-two: #A6A4A1;
 }
 
 
@@ -16,16 +22,20 @@ html, body {
     height: 100%;
 }
 
-body {
-    overflow-y: scroll;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1rem;
-	line-height: 1.5em;
-
+::-webkit-scrollbar {
+    display: none;
 }
 
-h1, h2, h3, h4, h5, h6, a{
-    font-family: 'Varela Round', sans-serif;
+body {
+/*    overflow-y: scroll;*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden
+}
+
+h1, h2, h3, h4, h5, h6 {
+     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -41,221 +51,259 @@ a:hover {
     color: var(--project-pink);
 }
 
-main {
-	padding-top: 1em;
-	width: 100%;
-	float: right;	
+/*----------sliding pages----------*/
+
+#slidingPages section {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
-@media all and (min-width: 770px) { 
-	main {
-	width: 80%;	
-}
-}
-
-/*nav bar*/
-header {
-	width: 85%;
-	position: fixed;
-	padding: 1em 1.5em;
+.sectionTab {
+	position: relative;
+    float: left;
+    width: 80px;
+    height: 100%;
+    padding: 10px 4px;
+    cursor: pointer;
 }
 
-nav { 
-	background: white;
-	border: solid 1.5px;
-	border-radius: .5em;
-	text-align: center;
-}
-
-nav ul {
-	padding: .2em .5em;
-	white-space: nowrap;
-}
-
-nav li {
-	border-bottom: 1.5px solid #000;
-	border-style: dashed;
-	padding: .5em;
-}
-
-nav li:last-of-type {
-	border-bottom: none;
-	
-}
-
-.fas {
-	padding-left: 1em;
-	font-size: .8em;
-}
-
-.nav-icon {
-	margin: 1em;
-	width: 28px;
-	z-index: -1;
-}
-
-.nav-icon:after, 
-.nav-icon:before, 
-.nav-icon div {
-	background-color: #000;
-	border-radius: 3px;
-	content: '';
-	display: block;
-	height: 3px;
-	margin: 5px 0;
-	transition: all .2s ease-in-out;
-	pointer-events: none;
-	z-index: -1;
-}
-
-.menuControl h1{
-	z-index: -1;
+.sectionTab h1{
+	transform: translateX(-50vh) translateX(+32px) translateY(50vh) rotate(-90deg);
+    text-align: right;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    width: 100vh;
+    margin-bottom: 0;
+	color: #fff;
+	z-index: inherit;
+	display: inline-block;
 	pointer-events: none;
 }
 
+/*secion tab colours*/
 
-.menuControl {
-	z-index: 1;
-	max-width: 8em;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
+.video h1{
+	color: #fff;
 }
 
-.iconClose h1 {
-	color: var(--project-red);
+.video .sectionTab{
+	background-color: rgba(0, 0, 0, 0.3)
 }
 
-.hide {
-	display: none;
+.how .sectionTab{
+	background-color: lightgrey;
+	background-color: var(--project-grey-one);
+	border-right: #fff solid 2px;
 }
 
-.iconClose .nav-icon:before,
-.iconClose .nav-icon:after, 
-.iconClose .nav-icon div {
+.contact .sectionTab{
+	background-color: pink;
+	background-color: var(--project-pink);
+	border-right: #fff solid 2px;
+}
+
+.example .sectionTab{
+	background-color: red;
 	background-color: var(--project-red);
 }
 
-.iconClose .nav-icon:before {
-  transform: translateY(8px) rotate(135deg);
+.example {
+	right: 0;
+	z-index: 100;
 }
 
-.iconClose .nav-icon:after {
-  transform: translateY(-8px) rotate(-135deg);
+/*section movement*/
+
+.how {
+	left: 80px;
+	background-color: white;
+	width: calc(100% - 240px);
+	transform: translateX(0);
+	transition: left 1s,transform 1s,margin-left 0.25s;
+	transition-timing-function: ease;
+	z-index: 3;
 }
 
-.iconClose .nav-icon div {
-  transform: scale(0);
+.contact {
+	left: 160px;
+	background-color: white;
+	width: calc(100% - 240px);
+	transform: translateX(0);
+	transition: left 1s,transform 1s,margin-left 0.25s;
+	transition-timing-function: ease;
+	z-index: 4;
 }
 
-/*nav animation*/
-
-ul li:nth-child(1) {
-	animation-delay: .2s;
+.video {
+	z-index: 2;
 }
 
-ul li:nth-child(2) {
-	animation-delay: .4s;
+.close {
+	-ms-transform: translateX(100%);
+	-moz-transform:translateX(100% - 80px));
+	-webkit-transform:translateX(calc(100% - 80px));
+	-o-transform:translateX(calc(100% - 80px));
 }
 
-ul li:nth-child(3) {
-	animation-delay: .6s;
+
+
+/*section centent styling*/
+
+.content {
+	overflow: auto;
+	height: 100vh;
+	width: calc(100% - 80px);
+	float: right;
+	scrollbar-width: none;
 }
 
-ul li:nth-child(2) a {
-	color: var(--project-red);
+/*video section content*/
+
+.vidContent {
+	width: calc(100vw - 240px);
+	height: 100%; 
+	background-image: url('/images/IMG_4111.jpg');
+	background-position: center; 
+  	background-repeat: no-repeat; 
+  	background-size: cover;
+	z-index: 0;
 }
 
-ul li:nth-child(4) {
-	animation-delay: .8s;
+.vidContent > div {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	right: 0;
+	width: calc(100% - 80px);
+	height: 100vh;
 }
 
-@media all and (min-width: 770px) {  
-	header {
-		padding-top: 10vh;
-		width: 20%;
-	}
-	
-	nav {
-		border: none;
-	}
-	
-	.menuControl {
-		display: none;
-	}
-	
-	.hide {
-		display: block;
-	}
-	
-	nav ul {
-		display: inline-block;
-	}
-}
+/*vidoe player*/
 
-/*------------page*/
-
-.flowDi {
-	width: 100%;
-	margin: auto;
-	padding-top: 10vh;
-}
-
-.st0{fill:none;stroke:#707070;stroke-width:2;}
-.st1{fill:none;stroke:#707070;stroke-width:2;stroke-miterlimit:4.0001;}
-.st2{fill:none;stroke:#707070;stroke-width:2;stroke-dasharray:10;}
-.st3{fill:#FFFFFF;stroke:#707070;stroke-width:2;}
-.st4{font-family: 'Varela Round', sans-serif;}
-.st5{font-size:27.2735px;}
-.st6{fill:#FD46CE;}
-.st7{fill:#C0A688;stroke:#707070;stroke-width:2;}
-.st8{fill:#FFFFFF;}
-
-#corners path{
-	fill: #FD46CE;
-	stroke: none;
-}
-
-.bubble {
-	cursor: pointer;
-}
-
-.bubble .corners {
-	display: none;
-}
-
-.bubble:hover .corners {
+#videoContainer video {
 	display: block;
+	width: 100%;
 }
 
-text {
-	font-family: 'Varela Round', sans-serif;
-}
-
-.path {
-	stroke: #000;
-	stroke-dasharray: 10;
-	animation: dash 20s linear infinite;
-	fill: none;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
-
-@media all and (min-width: 770px) { 
-	.flowDi {
-		width: 80%;
-		margin: auto;
-		padding-top: 10vh;
-	}
-
+#videoContainer {
+	width: 80%;
+	max-height: 80vh;
+	overflow: hidden;
+	border-radius: 1em;
 }
 
 
+button {
+	background-color: transparent;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+/*	font-size: 16px;*/
+	border: none;
+/*	padding-right: 2em;*/
+	color: #fff;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+  outline: none;
+  
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+#playGroup {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em;
+}
+
+#seeker {
+	width: 80%;
+}
+
+#playPause:before {
+	content: '\f04b';
+    font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+    display: inline-block;
+    font-size: 4em;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+#fullScreen:before { 
+	content: '\f065';
+    font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+    display: block;
+	font-size: 4em;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+#volumeGroup {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 12em;
+	padding: 1em 0;
+	align-items: center;
+}
+
+#mute .fa {
+	font-size: 2em;
+}
+
+#playPause.play:before {
+    content: '\f04b';
+    font-family: 'Font Awesome 5 Free';    
+}
+
+#playPause.pause:before {
+    content: '\f04c';
+    font-family: 'Font Awesome 5 Free';
+}
 
 
 
-/*sub-section*/
+    

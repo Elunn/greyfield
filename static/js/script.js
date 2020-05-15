@@ -67,25 +67,36 @@ window.onload = function () {
   });
 }
 
+//test page below script
+
 function toggleDocs(event) {
 
-    if (event.target && event.target.className == 'menuControl') {
+    if (event.target && event.target.className == 'sectionTab') {
 
-        var next = event.target.nextElementSibling;
 		var parent = event.target.parentElement;
+		var video = document.querySelector('.video');
+		var how = document.querySelector('.how');
+		var contact = document.querySelector('.contact');
 		
-
-
-        if (next.classList.contains ('hide')) {
-            next.classList.remove("hide");
-			parent.classList.add("iconClose");
-			
-
-        } else {
-            next.classList.add("hide");
-			parent.classList.remove("iconClose");
-        }
-    }
-}
+        if (parent.classList.contains('video')) {
+            console.log('video');
+			how.classList.add("close");
+			contact.classList.add("close");
+        } 
+		else if (parent.classList.contains('how')){
+			console.log('how');	
+			how.classList.remove("close");
+			contact.classList.add("close");
+		} 
+		else if (parent.classList.contains('contact')){
+			console.log('contact');
+			how.classList.remove("close");
+			contact.classList.remove("close");
+		}
+    };
+	
+	
+};
 
 document.addEventListener('click', toggleDocs, true);
+
