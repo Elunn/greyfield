@@ -4,7 +4,8 @@ window.onload = function () {
       volume = document.getElementById('volume'),
       play = document.getElementById('playPause'),
       mute = document.getElementById('mute'),
-      full = document.getElementById('fullScreen');
+      full = document.getElementById('fullScreen'),
+	  text = document.getElementById('fadeText'); 
 
   seeker.addEventListener('change', function() {
     var time = video.duration * (seeker.value / 100);
@@ -19,6 +20,7 @@ window.onload = function () {
 
   video.addEventListener('ended', function() {
     play.className = 'pause';
+	text.classList.remove("fade");
   });
 
   seeker.addEventListener('mousedown', function() {
@@ -26,6 +28,7 @@ window.onload = function () {
   });
   seeker.addEventListener('mouseup', function() {
     video.play();
+	  text.classList.add("fade");
   });
 
   volume.addEventListener('change', function() {
@@ -36,10 +39,12 @@ window.onload = function () {
     if (video.paused == true) {
       video.play();
       play.className = 'pause';
+		text.classList.add("fade");
     }
     else {
       video.pause();
       play.className = 'play';
+		text.classList.remove("fade");
     }
   });
 

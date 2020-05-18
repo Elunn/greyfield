@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="english">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
-	
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ `css/reset.css` | relURL}}">
 	<link rel="stylesheet" href="{{ `css/test.css` | relURL}}">
-    <link rel="stylesheet" href="{{ `css/reset.css` | relURL}}">
-	<link rel="icon" type="image/png" href="/images/favicon.png" />
-    <title>Greyfield</title>
+	<link rel="stylesheet" href="{{ `css/animate.css` | relURL}}">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+	<title>Greyfield Proposal</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 </head>
 <body>
@@ -22,42 +20,190 @@
 				<h1>Introduction <i class="fas fa-play"></i></h1>
 			</div>
 			
-			<div class="vidContent">
-				<div>
-					<div id="volumeGroup">
-						<button type="button" class="button" id="mute"><i class="fa fa-volume-up"></i></button>
-						<input type="range" class="slider" id="volume" min="0" max="1" step="0.1" value="1">
-					</div>
-					<div id="videoContainer">
-						<video id="video">
-							<source src="/video/Workshop_animation.MP4" type="video/mp4">
-						</video>
-					</div>
-					<div id="playGroup">
-						<button type="button" id="playPause"></button>
-						<input type="range" class="slider" id="seeker" value="0">
-						<button type="button" class="button" id="fullScreen"></button>
+			<div class="content">
+				<div class="vidContent">
+					<div>
+						<div id="volumeGroup">
+							<button type="button" class="button" id="mute"><i class="fa fa-volume-up"></i></button>
+							<input type="range" class="slider" id="volume" min="0" max="1" step="0.1" value="1">
+						</div>
+						<div id="videoContainer">
+							<video id="video">
+								<source src="/video/Workshop_animation.MP4" type="video/mp4">
+							</video>
+							<p class="heroText" id="fadeText">Greyfield works with <u>councils</u>, <u>artists in residence</u>, local groups or tenants <u>associations</u> to provide a starting point for <u>creative projects</u> in their <u>community</u>.</p>
+						</div>
+						<div id="playGroup">
+							<button type="button" id="playPause"></button>
+							<input type="range" class="slider" id="seeker" value="0">
+							<button type="button" class="button" id="fullScreen"></button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 <!--how section		-->
-		<section class="how close">
+		<section class="slide how close">
 			<div class="sectionTab">
 				<h1>How it Works</h1>
 			</div>
 			<div class="content">
-				<p></p>
-				<div class="height"></div>
+				<div>
+					<p	class="heroText">Greyfield identifies <u>groups</u>, <u>activities</u> or <u>aspirations</u> within communities to develop a <u>collaborative</u> <u>cultural</u> <u>programme</u>.</p>
+					
+					<p class="diagramText">The flow diagram sets out the steps for how the project works, <em>click to explore</em>.</p>
+					
+					<svg class="flowDiagram" viewBox="0 0 1074.99 1334.38">
+						<g id="arrows">
+							<g id="Group_205_1_" transform="translate(1072.056 -336.005) rotate(68)">
+								<path id="Path_253_1_" class="st0" d="M755.89,930.56c0,0-20.78,95.45,17.77,162.37"/>
+								<path id="Path_254_1_" class="st0" d="M749.05,1082.52l24.4,10.98l2.73-22"/>
+							</g>
+							<g id="Group_206_1_" transform="translate(218.535 -677.379) rotate(24)">
+								<path id="Path_253-2_1_" class="st0" d="M601.81,705.53c0,0-1.35,70.41,34.53,112.73"/>
+								<path id="Path_254-2_1_" class="st0" d="M609.71,810.55l26.93,8.3l7.47-24.75"/>
+							</g>
+							<g id="Group_215_1_" transform="matrix(0.225, -0.974, 0.974, 0.225, 200.674, 1547.647)">
+								<path id="Path_253-3_1_" class="st1" d="M1188.83,207.7c0,0-22.4,112.18-185.53,190.57"/>
+								<path id="Path_254-3_1_" class="st2" d="M1038.46,403.63l-36.02-5.33l16.95-29.47"/>
+							</g>
+						</g>
+						<g id="dotted">
+							<path id="Path_267_1_" class="st3" d="M419.62,639.51C260.1,689.06,65.78,667.38,53.55,782.93s101.54,187.54,145.41,198.82
+								s807.86,94.8,822.3-134.39S902.63,607.32,866.45,596.43C830.26,585.54,579.14,589.96,419.62,639.51z"/>
+						</g>
+						<g id="identify" class="bubble">
+							<path id="Path_265_1_" class="st4" d="M419.97,72.44c0,0-195.28-2.82-185.63,49.21s45.96,75.11,128.33,83.18
+								s369.3,20.58,373.72-18.96S697.57,64.49,419.97,72.44"/>
+							<text transform="matrix(1 0 0 1 278.7682 154.045)" class="st5 st6">Identify Greyfield land</text>
+							<text transform="matrix(1 0 0 1 187.1202 86.0453)" class="st5 st6">1</text>
+							<use xlink:href="#corners" class="corners" x="270" y="20"/>
+						</g>
+						<g id="Establish" class="bubble">
+							<path id="Path_259_2_" class="st4" d="M539.6,368.38c0,0-217.02-27.93-216.64,23.92s12.33,91.33,94.68,92s200.46,0,200.46,0
+								s54.88,6.77,54.39-54.84S539.6,368.38,539.6,368.38z"/>
+							<text transform="matrix(1 0 0 1 282.1202 371.045)" class="st5 st6">2</text>
+							<text transform="matrix(1 0 0 1 347.6821 416.045)" class="st5 st6">Establish Access </text>
+							<text transform="matrix(1 0 0 1 421.108 461.045)" class="st5 st6">to Space</text>
+							<use xlink:href="#corners" class="corners" x="270" y="300"/>
+						</g>
+						<g id="Programme" class="bubble">
+							<path id="Path_270_1_" class="st4" d="M868.09,683.87c0,0,68.35,5.35,67.8,50.01s-48.23,52.19-237.95,65.45
+								c0,0-194.7,5.99-203.77-70.52s147.71-61.07,163.48-63.02S868.09,683.87,868.09,683.87"/>
+							<text transform="matrix(1 0 0 1 619.8669 721.0451)" class="st5 st6">Creating a </text>
+							<text transform="matrix(1 0 0 1 536.9869 766.045)" class="st5 st6">Cultural Programme</text>
+							<text transform="matrix(1 0 0 1 472.12 671.045)" class="st5 st6">3</text>
+							<use xlink:href="#corners" class="corners" x="480" y="600"/>
+						</g>
+						<g id="Design" class="bubble">
+							<path id="Path_266_1_" class="st4" d="M230.9,799.3c0,0-111.96,6.07-96.08,67.35s96.08,72.75,96.08,72.75
+								s199.54-14.55,204.84-39.12s-13.53-51.13-13.53-51.13s-23.37-53.9-59.12-49.86S230.9,799.3,230.9,799.3z"/>
+							<text transform="matrix(1 0 0 1 185.8161 858.0451)" class="st5 st6">Design the </text>
+							<text transform="matrix(1 0 0 1 176.5292 903.0451)" class="st5 st6">Event Space</text>
+							<text transform="matrix(1 0 0 1 98.1201 817.0452)" class="st5 st6">4</text>
+							<use xlink:href="#corners" class="corners" x="10" y="720"/>
+						</g>
+
+						<symbol id="corners">
+							<path id="Path_231" class="st7" d="M26.36,184.88h20.8v35.2h38.4v22.4h-59.2V184.88z">
+
+							<animate attributeName="d" 
+							  dur="500ms" 
+							  repeatCount="indefinite" values="M26.36,184.88h20.8v35.2h38.4v22.4h-59.2V184.88z; M20.1,193.18l20.14-5.2l8.79,34.08l37.18-9.59l5.6,21.69l-57.32,14.79L20.1,193.18z; M26.36,184.88h20.8v35.2h38.4v22.4h-59.2V184.88z"/>
+							</path>
+
+							<path id="Path_232" class="st7" d="M455.04,80.12h-24.57v-35.2H385.1v-22.4h69.93V80.12z">
+
+							<animate attributeName="d" 
+							  dur="500ms" 
+							  repeatCount="indefinite" values="M455.04,80.12h-24.57v-35.2H385.1v-22.4h69.93V80.12z; M447.04,87.72l-23.84-5.94l8.5-34.16l-44.02-10.96l5.41-21.74l67.86,16.89L447.04,87.72z; M455.04,80.12h-24.57v-35.2H385.1v-22.4h69.93V80.12z"/>
+							</path>
+						</symbol>
+					</svg>
+				</div>
 			</div>
 		</section>
 <!--contact section		-->		
-		<section class="contact close">
+		<section class="slide contact close">
 			<div class="sectionTab">
 				<h1>Get Involved</h1>
 			</div>
 			<div class="content">
-				
+				<div>
+					<p class="heroText">Greyfield <u>reimagines</u> <u>urban</u> <u>spaces</u> by creating opportunities for <u>cultural</u> <u>access</u> and <u>participation</u>. It can be initiated by <u>councils</u>, <u>artists</u>,  <u>designers</u>, <u>local groups</u> or <u>tenants associations</u>.</p>
+					<p>Which kind of initiator are you? </p>
+					
+					<h2>Get In Touch</h2>
+					
+					<form id="contactForm" name="contact" netlify>
+						<ul>
+							<li>
+								<label class="lable" for="mail">E-mail</label>
+								<input type="email" id="mail" name="user_email">
+							</li>
+							<li>
+								<label class="lable" for="msg">Message</label>
+								<textarea id="msg" name="user_message"></textarea>
+							</li>
+							<li id="send">
+								<button type="submit">
+									<svg viewBox="0 0 276.55 166.83">
+									<g>
+										<path id="Path_259" d="M163.28,53.77c0,0-126.97-15.57-126.75,13.34s7.21,50.93,55.39,51.31
+										c48.18,0.37,117.27,0,117.27,0s32.11,3.77,31.82-30.58S163.28,53.77,163.28,53.77z"/>
+										<text transform="matrix(1 0 0 1 93.9705 98.3303)">Send</text>
+									</g>
+									<g id="frame">
+										<path id="Path_277" class="st4" d="M6.98,101.62h20.8v35.2h38.4v22.4H6.98V101.62z">
+											<animate attributeName="d" dur="500ms" repeatCount="indefinite" values="M6.98,101.62h20.8v35.2h38.4v22.4H6.98V101.62z; M2.46,107.15l20.49-3.59l6.07,34.67l37.83-6.62l3.86,22.06l-58.31,10.2L2.46,107.15z; M6.98,101.62h20.8v35.2h38.4v22.4H6.98V101.62z"/>
+										</path>
+										<path id="Path_278" class="st4" d="M269.85,64.99h-24.57v-35.2h-45.36V7.39h69.93V64.99z">
+											<animate attributeName="d" dur="500ms" repeatCount="indefinite" values="M269.85,64.99h-24.57v-35.2h-45.36V7.39h69.93V64.99z; M265.4,69.67l-24.32-3.49l5-34.84l-44.9-6.45l3.18-22.17l69.22,9.94L265.4,69.67z; M269.85,64.99h-24.57v-35.2h-45.36V7.39h69.93V64.99z"/>
+										</path>
+									</g>
+									</svg>
+								</button>
+							</li>
+						</ul>							
+					</form>
+					<h2>Resources</h2>
+					<table>
+						<tr>
+							<th>Link</th>
+							<th>Title</th>
+							<th>Topic</th>
+						</tr>
+						<tr>
+							<th><a>PDF</a></th>
+							<th>'Design a City for all Londoners'</th>
+							<th>City Planning, Creativity, Accessibility</th>
+						</tr>
+						<tr>
+							<th><a>PDF</a></th>
+							<th>'Design a City for all Londoners'</th>
+							<th>City Planning, Creativity, Accessibility</th>
+						</tr>
+						<tr>
+							<th><a>PDF</a></th>
+							<th>'Design a City for all Londoners'</th>
+							<th>City Planning, Creativity, Accessibility</th>
+						</tr>
+						<tr>
+							<th><a>PDF</a></th>
+							<th>'Design a City for all Londoners'</th>
+							<th>City Planning, Creativity, Accessibility</th>
+						</tr>
+						<tr>
+							<th><a>PDF</a></th>
+							<th>'Design a City for all Londoners'</th>
+							<th>City Planning, Creativity, Accessibility</th>
+						</tr>
+						
+					</table>
+					<div>
+						
+					</div>
+				</div>
 			</div>
 		</section>
 <!--West ken tab	-->			
@@ -68,5 +214,7 @@
 		</section>
 	</main>
 </body>
+	<script src="{{ `js/script.js` | relURL}}"></script>
 </html>
-<script src="{{ `js/script.js` | relURL}}"></script>
+
+
