@@ -100,6 +100,7 @@ a:hover {
 		text-align: right;
 		transform: translateX(-50vh) translateX(+31px) translateY(50vh) rotate(-90deg);
 		text-align: right;
+		padding-right: 5vh;
 		width: 100vh;
 	}
 }
