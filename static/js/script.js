@@ -106,3 +106,36 @@ function toggleDocs(event) {
 
 document.addEventListener('click', toggleDocs, true);
 
+//------popout section control 
+
+//open
+
+var open1 = document.getElementById("identify"),
+	popout1 = document.getElementById("popout1"),
+	popContainer = document.getElementById("popoutContainer");
+
+open1.addEventListener("click", function(){ 	
+	popout1.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
+
+
+//close
+
+function toggleDocsTwo(eventTwo) {
+		if (eventTwo.target && eventTwo.target.className == 'popoutClose'){
+
+		var pre2 = eventTwo.target.parentElement.parentElement.parentElement;
+		var pre1 = eventTwo.target.parentElement;
+
+		if (pre1.className == 'popout'){
+			 pre2.classList.add("hide");
+			 pre1.classList.add("hide");
+		} else {
+			pre2.classList.remove("hide");
+			pre1.classList.remove("hide");
+		}
+	}
+}
+
+document.addEventListener('click', toggleDocsTwo, true);
