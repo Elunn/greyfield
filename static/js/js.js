@@ -29,7 +29,7 @@ document.body.addEventListener('click', e => {
   // smooooooth scroll to the target!
   target.scrollIntoView({
     behavior: 'smooth',
-    block: 'start'
+    block: "start"
   });
 
 });

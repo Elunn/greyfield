@@ -705,6 +705,7 @@ img {
 .westkenContent p {
 	width: 40%;
 	padding-top: 2em;
+	line-height: 1.5;
 }
 
 .westkenContent section {
@@ -742,7 +743,7 @@ img {
 }
 
 .westkenContent h1 {
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	line-height: 1.2;
 	font-family: 'Varela Round', sans-serif;
 	color: var(--project-red);
@@ -752,7 +753,7 @@ img {
 	display: inline-block;
 	cursor: pointer;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	line-height: 1.2;
 }
 
@@ -774,6 +775,15 @@ img {
 	position: fixed;
 }
 
+#navbar li a:nth-child(2) {
+	opacity: 0.5;
+	font-size: 1.5rem;
+}
+
+#navbar li a:nth-child(3) {
+	opacity: 0.25;
+	font-size: 1.2rem;
+}
 
 
 
