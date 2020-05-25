@@ -150,37 +150,36 @@ if (window.location.pathname === '/home/') {
 
 	//open
 
-	var open1 = document.getElementById("identify"),
-		open2 = document.getElementById("establish"),
-		open3 = document.getElementById("programme"),
-		popout1 = document.getElementById("popout1"),
-		popout2 = document.getElementById("popout2"),
-		popout3 = document.getElementById("popout3"),
-		popContainer = document.getElementById("popoutContainer");
+var open1 = document.getElementById("identify"),
+	open2 = document.getElementById("establish"),
+	open3 = document.getElementById("programme"),
+	open4 = document.querySelector("#design"),
+	popout1 = document.getElementById("popout1"),
+	popout2 = document.getElementById("popout2"),
+	popout3 = document.getElementById("popout3"),
+	popout4 = document.getElementById("popout4"),
+	popContainer = document.getElementById("popoutContainer");
 
-	open1.addEventListener("click", function(){ 	
-		popout1.classList.remove("hide");
-		popContainer.classList.remove("hide");
-	}else {
-		popout1.classList.add("hide");
-		popContainer.classList.add("hide");				   
-	});
+open1.addEventListener("click", function(){ 	
+	popout1.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
 
-	open2.addEventListener("click", function(){ 	
-		popout2.classList.remove("hide");
-		popContainer.classList.remove("hide");
-	}else {
-		popout2.classList.add("hide");
-		popContainer.classList.add("hide");				   
-	});
-	
-	open3.addEventListener("click", function(){ 	
-		popout3.classList.remove("hide");
-		popContainer.classList.remove("hide");
-	}else {
-		popout3.classList.add("hide");
-		popContainer.classList.add("hide");				   
-	});
+open2.addEventListener("click", function(){ 	
+	popout2.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
+
+open3.addEventListener("click", function(){ 	
+	popout3.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
+
+open4.addEventListener("click", function(){ 	
+	popout4.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
+
 	
 	// close new
 

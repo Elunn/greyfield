@@ -116,7 +116,7 @@ document.addEventListener('click', toggleDocs, true);
 var open1 = document.getElementById("identify"),
 	open2 = document.getElementById("establish"),
 	open3 = document.getElementById("programme"),
-	open4 = document.getElementById("design"),
+	open4 = document.querySelector("#design"),
 	popout1 = document.getElementById("popout1"),
 	popout2 = document.getElementById("popout2"),
 	popout3 = document.getElementById("popout3"),
