@@ -115,8 +115,12 @@ document.addEventListener('click', toggleDocs, true);
 
 var open1 = document.getElementById("identify"),
 	open2 = document.getElementById("establish"),
+	open3 = document.getElementById("programme"),
+	open4 = document.getElementById("design"),
 	popout1 = document.getElementById("popout1"),
 	popout2 = document.getElementById("popout2"),
+	popout3 = document.getElementById("popout3"),
+	popout4 = document.getElementById("popout4"),
 	popContainer = document.getElementById("popoutContainer");
 
 open1.addEventListener("click", function(){ 	
@@ -126,6 +130,16 @@ open1.addEventListener("click", function(){
 
 open2.addEventListener("click", function(){ 	
 	popout2.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
+
+open3.addEventListener("click", function(){ 	
+	popout3.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
+
+open4.addEventListener("click", function(){ 	
+	popout4.classList.remove("hide");
 	popContainer.classList.remove("hide");
 });
 

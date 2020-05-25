@@ -152,8 +152,10 @@ if (window.location.pathname === '/home/') {
 
 	var open1 = document.getElementById("identify"),
 		open2 = document.getElementById("establish"),
+		open3 = document.getElementById("programme"),
 		popout1 = document.getElementById("popout1"),
 		popout2 = document.getElementById("popout2"),
+		popout3 = document.getElementById("popout3"),
 		popContainer = document.getElementById("popoutContainer");
 
 	open1.addEventListener("click", function(){ 	
@@ -165,7 +167,12 @@ if (window.location.pathname === '/home/') {
 		popout2.classList.remove("hide");
 		popContainer.classList.remove("hide");
 	});
-
+	
+	open3.addEventListener("click", function(){ 	
+		popout3.classList.remove("hide");
+		popContainer.classList.remove("hide");
+	});
+	
 	// close new
 
 	var close = document.querySelector('#closeClick');
