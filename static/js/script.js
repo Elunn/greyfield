@@ -1,3 +1,6 @@
+
+
+
 window.onload = function () {
   var video = document.getElementById('video'),
       seeker = document.getElementById('seeker'),
@@ -128,7 +131,7 @@ open2.addEventListener("click", function(){
 
 // close new
 
-var close = document.querySelector('.popoutClose');
+var close = document.querySelector('#closeClick');
 
 close.addEventListener("click", function(){
 	popContainer.classList.add("hide");
@@ -165,3 +168,37 @@ function hideNonVisibleDivs() {
 		}
   }	
 }
+
+//------smooth scroll
+
+console.clear();
+
+// This works on Firefox and Chrome
+
+// Everytime someone clicks on something
+document.body.addEventListener('click', e => {
+  
+  const href = e.target.href;
+  
+  // no href attribute, no need to continue then
+  if (!href) return;
+  
+  const id = href.split('#').pop();
+  const target = document.getElementById(id);
+  
+  // no target to scroll to, bail out
+  if (!target) return;
+  
+  // prevent the default quick jump to the target
+  e.preventDefault();
+  
+  // set hash to window location so history is kept correctly
+  history.pushState({}, document.title, href);
+  
+  // smooooooth scroll to the target!
+  target.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+
+});

@@ -51,9 +51,9 @@
 				<div>
 					<p	class="heroText">Greyfield identifies <u>groups</u>, <u>activities</u> or <u>aspirations</u> within communities to develop a <u>collaborative</u> <u>cultural</u> <u>programme</u>.</p>
 					
-					<p class="diagramText">The flow diagram sets out the steps for how the project works, <em>click to explore</em>.</p>
+					<p class="diagramText">The <a href="#flowDiagram">flow diagram</a> sets out the steps for how the project works, <em>click to explore</em>.</p>
 					
-					<svg class="flowDiagram" viewBox="0 0 1074.99 1334.38">
+					<svg id="flowDiagram" class="flowDiagram" viewBox="0 0 1074.99 1334.38">
 						<g id="arrows">
 							<g id="Group_205_1_" transform="translate(1072.056 -336.005) rotate(68)">
 								<path id="Path_253_1_" class="st0" d="M755.89,930.56c0,0-20.78,95.45,17.77,162.37"/>
@@ -221,7 +221,7 @@
 		<div id="popoutContainer" class="hide">
 			<div id="popouts">
 				<nav>
-					<button class="popoutClose"></button>
+					<button class="contentClose" id='closeClick'></button>
 					<ul>
 						<li id="one" onclick="toggleVisibility('popout1');">Identifying Greyfield Land,</li>
 						<li onclick="toggleVisibility('popout2');">Establish Access to Space,</li>
@@ -251,20 +251,73 @@
 					</div>
 				</div>
 				<div id="popout2" class="popout hide">
-					2
-
+					<div class="popoutContent">
+						<div class="imgSlider">
+							<img src="/images/7.jpg">
+						</div>
+						<div class="popoutText">
+							<div>
+								<h2>What</h2>
+								<p></p>
+							</div>
+							<div>
+								<h2>Why?</h2>
+								<p></p>
+							</div>
+							<div>
+								<h2>How?</h2>
+								<p></p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div id="popout3" class="popout hide">
-					3
+					<div class="popoutContent">
+						<div class="imgSlider">
+							<img src="/images/7.jpg">
+						</div>
+						<div class="popoutText">
+							<div>
+								<h2>What</h2>
+								<p></p>
+							</div>
+							<div>
+								<h2>Why?</h2>
+								<p></p>
+							</div>
+							<div>
+								<h2>How?</h2>
+								<p></p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div id="popout4" class="popout hide">
-					4
+					<div class="popoutContent">
+						<div class="imgSlider">
+							<img src="/images/7.jpg">
+						</div>
+						<div class="popoutText">
+							<div>
+								<h2>What</h2>
+								<p></p>
+							</div>
+							<div>
+								<h2>Why?</h2>
+								<p></p>
+							</div>
+							<div>
+								<h2>How?</h2>
+								<p></p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</main>
 </body>
-	<script src="{{ `js/script.js` | relURL}}"></script>
+	<script src="{{ `js/js.js` | relURL}}"></script>
 </html>
 
 

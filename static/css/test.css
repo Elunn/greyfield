@@ -2,14 +2,15 @@
 
 * {
 	box-sizing: border-box;
+/*	scroll-behavior: smooth;*/
 }
+
 
 :root {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
 	font-size: 16px;
-	line-height: 18px;
 	--project-pink: #FEC8EE;
 	--project-red: #FE3D00;
 	--project-brown: #C0A688;
@@ -532,7 +533,7 @@ tr {
 
 /*-----------how diagram popout-----------*/
 
-.popoutClose {
+.contentClose {
 	margin-right: 1em;
 	z-index: 1000;
 	cursor: pointer;
@@ -543,7 +544,7 @@ tr {
 	float: right;
 }
 
-.popoutClose:before {
+.contentClose:before {
 	font-family: "Font Awesome 5 Free";
 	content: "\f00d";
 	display: inline-block;
@@ -636,6 +637,14 @@ img {
 	display: flex;
 	justify-content: space-around;
 	line-height: 1.3;
+}
+
+.popoutText a {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 1rem;
+	display: inline-block;
 }
 
 .popoutText > div {
@@ -732,6 +741,14 @@ img {
 
 .fixedNav nav {
 	top: 0;
+	position: fixed;
+}
+
+.westken .contentClose {
+	position: absolute;
+	right: -5px;
+	top: 0;
+	z-index: 1000;
 	position: fixed;
 }
 
