@@ -161,16 +161,25 @@ if (window.location.pathname === '/home/') {
 	open1.addEventListener("click", function(){ 	
 		popout1.classList.remove("hide");
 		popContainer.classList.remove("hide");
+	}else {
+		popout1.classList.add("hide");
+		popContainer.classList.add("hide");				   
 	});
 
 	open2.addEventListener("click", function(){ 	
 		popout2.classList.remove("hide");
 		popContainer.classList.remove("hide");
+	}else {
+		popout2.classList.add("hide");
+		popContainer.classList.add("hide");				   
 	});
 	
 	open3.addEventListener("click", function(){ 	
 		popout3.classList.remove("hide");
 		popContainer.classList.remove("hide");
+	}else {
+		popout3.classList.add("hide");
+		popContainer.classList.add("hide");				   
 	});
 	
 	// close new
