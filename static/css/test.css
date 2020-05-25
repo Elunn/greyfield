@@ -769,7 +769,7 @@ img {
 .westken .contentClose {
 	position: absolute;
 	right: -5px;
-	top: 0;
+	top: 1em;
 	z-index: 1000;
 	position: fixed;
 }
