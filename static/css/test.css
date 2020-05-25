@@ -210,7 +210,7 @@ a:hover {
 .vidContent {
 	width: 100vw;
 	height: 100%; 
-	background-image: url('/images/IMG_4095bw.jpg');
+	background-image: url('/images/background02.jpg');
 	background-position: center; 
   	background-repeat: no-repeat; 
   	background-size: cover;
@@ -321,7 +321,7 @@ button {
 	font-weight: 900;
     display: inline-block;
     font-size: 4em;
-    color: white;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
 	cursor: pointer;
 	margin: 0;
@@ -364,12 +364,6 @@ button {
     font-family: 'Font Awesome 5 Free';
 }
 
-.height{
-	padding: 1em 4em; 
-	width: 10px; 
-	height: 1000px;
-	background-image: linear-gradient(red, yellow);
-}
 
 /*----------slide out content----------*/
 
