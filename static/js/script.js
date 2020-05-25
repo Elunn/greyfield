@@ -111,7 +111,9 @@ document.addEventListener('click', toggleDocs, true);
 //open
 
 var open1 = document.getElementById("identify"),
+	open2 = document.getElementById("establish"),
 	popout1 = document.getElementById("popout1"),
+	popout2 = document.getElementById("popout2"),
 	popContainer = document.getElementById("popoutContainer");
 
 open1.addEventListener("click", function(){ 	
@@ -119,23 +121,47 @@ open1.addEventListener("click", function(){
 	popContainer.classList.remove("hide");
 });
 
+open2.addEventListener("click", function(){ 	
+	popout2.classList.remove("hide");
+	popContainer.classList.remove("hide");
+});
 
-//close
+// close new
 
-function toggleDocsTwo(eventTwo) {
-		if (eventTwo.target && eventTwo.target.className == 'popoutClose'){
+var close = document.querySelector('.popoutClose');
 
-		var pre2 = eventTwo.target.parentElement.parentElement.parentElement;
-		var pre1 = eventTwo.target.parentElement;
+close.addEventListener("click", function(){
+	popContainer.classList.add("hide");
+	popout1.classList.add("hide");
+	popout2.classList.add("hide");
+});
 
-		if (pre1.className == 'popout'){
-			 pre2.classList.add("hide");
-			 pre1.classList.add("hide");
-		} else {
-			pre2.classList.remove("hide");
-			pre1.classList.remove("hide");
-		}
-	}
+
+//popout nav open
+
+var divs = ["popout1", "popout2", "popout3", "popout4"];
+var visibleDivId = null;
+function toggleVisibility(divId) {
+  if(visibleDivId === divId) {
+    //visibleDivId = null;
+  } else {
+    visibleDivId = divId;
+  }
+  hideNonVisibleDivs();
 }
-
-document.addEventListener('click', toggleDocsTwo, true);
+function hideNonVisibleDivs() {
+  var i, divId, div;
+  for(i = 0; i < divs.length; i++) {
+    divId = divs[i];
+    div = document.getElementById(divId);
+    if(visibleDivId === divId) {
+      div.classList.remove("hide");
+    } else {
+      div.classList.add("hide");
+    }
+	  if(visibleDivId === 'popout1'){
+		document.querySelector('#one').style.color = 'red';
+		} else {			document.querySelector('#one').style.color = 'black';
+		}
+  }	
+}

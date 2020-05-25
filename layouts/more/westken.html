@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ `css/reset.css` | relURL}}">
+	<link rel="stylesheet" href="{{ `css/test.css` | relURL}}">
+	<link rel="stylesheet" href="{{ `css/animate.css` | relURL}}">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Varela+Round&display=swap" rel="stylesheet">
+	<title>Greyfield Proposal</title>
+	<link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+</head>
+<body class="westken">
+	<main>
+		<section class="example">
+			<div class="sectionTab">
+				<h1>West Ken</h1>
+			</div>
+		</section>
+		<div class="westkenContent">
+		<h1>West Kensington and Gibbs Green’s <u>Artist Studios</u> in Empty <u>Garages</u>:</h1>
+		<nav id="navbar">
+			<ul>
+				<li><a href="#intro">Introduction, </a></li>
+				<li><a href="#residency">Residency, </a></li>
+				<li><a href="#outreach">Outreach.</a></li>
+			</ul>
+		</nav>
+			<section id="intro">
+				<div class="imgContainer right"><img alt="West Ken Estate London" src="/images/Map.gif"></div>
+				<p class="center">West Kensington and Gibbs Green are two council estates in west London that fought demolition for 10 years and won.  They now want to secure their future by applying for a Right to Transfer in order to be community owned. Similar to their neighbours, Walterton and Elgin who have been estate run since the 1990’s.</p>
+			</section>
+			<section id="residency">
+				<div class="imgContainer"><img alt="West Ken Estate London" src="/images/Collage_Lightgrey.gif"></div>
+				<p>An arts committee started to be founded in order to champion arts on the estates and also act as a steering group for the Greyfield project, made up of interested residents, designers and community organiser. We identified the numerous unused or empty council owned garages as an opportunity to act as the first project for the arts committee.</p>
+			</section>
+			<section id="outreach">
+				<div class="imgContainer"><img alt="West Ken Estate London" src="/images/Workshop_1.gif"></div>
+				<p>An arts committee started to be founded in order to champion arts on the estates and also act as a steering group for the Greyfield project, made up of interested residents, designers and community organiser. We identified the numerous unused or empty council owned garages as an opportunity to act as the first project for the arts committee.</p>
+			</section>	
+		</div>
+	</main>
+</body>
+	<script>
+		const nav = document.querySelector('#navbar');
+		const topOfNav = nav.offsetTop;
+
+		function fixNav(){
+			if(window.scrollY >= topOfNav){
+				document.body.classList.add('fixedNav')
+				document.body.style.paddingTop = nav.offsetHeight + 'px';
+			}else{
+				document.body.classList.remove('fixedNav');
+				document.body.style.paddingTop = 0;
+			}
+		}
+
+		window.addEventListener('scroll', fixNav);
+	</script>
+	<script src="{{ `js/script.js` | relURL}}"></script>
+</html>
+
+
