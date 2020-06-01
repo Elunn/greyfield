@@ -129,10 +129,6 @@ a:hover {
 	color: #fff;
 }
 
-.video .sectionTab{
-	
-}
-
 .how .sectionTab{
 	background-color: lightgrey;
 	background-color: var(--project-red);
@@ -149,7 +145,7 @@ a:hover {
 }
 
 .example {
-	height: 80px;
+	height: 60px;
 	top: calc(100vh - 60px);
 	transition: 1s,transform 1s,margin-left 0.25s;
 }
@@ -684,11 +680,22 @@ img {
 
 /*----------- west ken example page*/
 
-.westken {
-	overflow: scroll;
+.sidePages main {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	scrollbar-width: none;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.westkenContent {
+.sidePages .sectionTab {
+	position: fixed;
+	bottom: 0;
+}
+
+.sidePagesContent {
 	width: 80%;
 	margin: auto;
 	height: 100%;
@@ -696,30 +703,30 @@ img {
 	padding-right: 80px;
 }
 
-.westkenContent p {
+.sidePagesContent p {
 	width: 40%;
 	padding-top: 2em;
 	line-height: 1.5;
 }
 
-.westkenContent section {
+.sidePagesContent section {
 	padding: 2em 0;
 	display: flex;
 	flex-direction: column;
 }
 
-.westkenContent .right{
-	align-self: flex-end;
+.sidePagesContent .right{
+	transform: translateX(20vw)
 }
-.westkenContent .center{
-	align-self: center	
+.sidePagesContent .center{
+	transform: translateX(20vw)
 }
 
 .imgContainer img {
 	width: 100%;
 	height: auto;
 	border-radius: 2em;
-	margin: 0 5vw;
+/*	margin: 0 5vw;*/
 }
 
 .imgContainer {
@@ -728,22 +735,22 @@ img {
 
 /*nav*/
 
-.westkenContent nav {
+.sidePages nav {
 	width: 100%;
 }
 
-.westkenContent section {
+.sidePages section {
 	padding-top: 4em;
 }
 
-.westkenContent h1 {
+.sidePagesContent h1 {
 	font-size: 2.2rem;
 	line-height: 1.2;
 	font-family: 'Varela Round', sans-serif;
 	color: var(--project-red);
 }
 
-.westkenContent nav li {
+.sidePages nav li {
 	display: inline-block;
 	cursor: pointer;
 	font-family: 'Varela Round', sans-serif;
@@ -761,7 +768,7 @@ img {
 	position: fixed;
 }
 
-.westken .contentClose {
+.sidePages .contentClose {
 	position: absolute;
 	right: -5px;
 	top: 1em;
@@ -779,5 +786,5 @@ img {
 	font-size: 1.2rem;
 }
 
-
+/*-----------presentation! */
 
