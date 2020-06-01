@@ -233,7 +233,6 @@ if (window.location.pathname === '/westken/' || window.location.pathname === '/p
 			if(window.scrollY >= topOfNav){
 				document.body.classList.add('fixedNav')
 				document.body.style.paddingTop = nav.offsetHeight + 'px';
-				console.log("working");
 			}else{
 				document.body.classList.remove('fixedNav');
 				document.body.style.paddingTop = 0;
@@ -241,6 +240,29 @@ if (window.location.pathname === '/westken/' || window.location.pathname === '/p
 		}
 
 		window.addEventListener('scroll', fixNav);
+	//image slider
+
+var slideIndex = [1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
 }
 
 

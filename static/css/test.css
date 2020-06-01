@@ -805,3 +805,30 @@ img {
 	transform:translateY(80px) translateY(100%) rotate(-90deg);
 	color: #fff;
 }
+
+/*image slider*/
+
+.slider1, .Slider2, .mySlides3 {
+display: none
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	padding: .5em;
+	cursor: pointer;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: auto;
+	color: var(--project-grey-one);
+	font-weight: bold;
+	font-size: 3rem;
+	transition: 0.6s ease;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
