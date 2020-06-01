@@ -38,6 +38,7 @@ body {
 	background-size: cover;
 	overflow: hidden;
 	font-size: 1.1rem;
+   	scrollbar-width: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -680,14 +681,9 @@ img {
 
 /*----------- west ken example page*/
 
-.sidePages main {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	scrollbar-width: none;
+.sidePages {
 	overflow-y: scroll;
-	overflow-x: hidden;
-	-ms-overflow-style: -ms-autohiding-scrollbar;
+	scrollbar-width: none;
 }
 
 .sidePages .sectionTab {

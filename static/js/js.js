@@ -225,7 +225,7 @@ open4.addEventListener("click", function(){
 
 // example page
 
-if (window.location.pathname === '/westken/'){
+if (window.location.pathname === '/westken/' || window.location.pathname === '/presentation/'){
 	const nav = document.querySelector('#navbar');
 		const topOfNav = nav.offsetTop;
 
@@ -241,6 +241,4 @@ if (window.location.pathname === '/westken/'){
 		}
 
 		window.addEventListener('scroll', fixNav);
-
-
 }
