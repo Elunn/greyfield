@@ -226,7 +226,7 @@ a:hover {
 
 /*vidoe player*/
 
-#videoContainer video {
+ video {
 	display: block;
 	width: 100%;
 }
@@ -615,7 +615,6 @@ img {
 	position: relative;
 	width: 80%;
 	margin: auto;
-	
 }
 
 .black {
@@ -692,7 +691,7 @@ img {
 }
 
 .sidePagesContent {
-	width: 80%;
+	width: 80vw;
 	margin: auto;
 	height: 100%;
 	padding-bottom: 2em;
@@ -700,15 +699,16 @@ img {
 }
 
 .sidePagesContent p {
-	width: 40%;
-	padding-top: 2em;
+	width: 60%;
+	padding: 4em 0;
 	line-height: 1.5;
 }
 
 .sidePagesContent section {
-	padding: 2em 0;
+	position: relative;
 	display: flex;
 	flex-direction: column;
+	padding: 4em 0;
 }
 
 .sidePagesContent .right{
@@ -721,22 +721,21 @@ img {
 .imgContainer img {
 	width: 100%;
 	height: auto;
-	border-radius: 2em;
-/*	margin: 0 5vw;*/
 }
 
 .imgContainer {
 	width: 50%; 
+	max-height: 80vh;
+	overflow: hidden;
+	border-radius: 1em;
+	position: relative;
 }
 
 /*nav*/
 
 .sidePages nav {
 	width: 100%;
-}
-
-.sidePages section {
-	padding-top: 4em;
+	z-index: 1000;
 }
 
 .sidePagesContent h1 {
@@ -784,3 +783,25 @@ img {
 
 /*-----------presentation! */
 
+.bar {
+	position: absolute;
+	width: 80px;
+	height: 80%;
+	right: -20px;
+	margin-bottom: 4em;
+	transform: translateX(10vw);
+	z-index: 10000;
+	background-color: var(--project-red);
+}
+
+.red {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	margin-bottom: 200px;
+}
+
+.red h1 {
+	transform:translateY(80px) translateY(100%) rotate(-90deg);
+	color: #fff;
+}

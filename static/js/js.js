@@ -242,3 +242,6 @@ if (window.location.pathname === '/westken/' || window.location.pathname === '/p
 
 		window.addEventListener('scroll', fixNav);
 }
+
+
+							  
