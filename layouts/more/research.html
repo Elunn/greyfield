@@ -14,45 +14,61 @@
 </head>
 <body class="research">
 	<main>
-		<table>
-			<tr>
-				<th>Link</th>
-				<th>Title</th>
-				<th>Topic</th>
-			</tr>
-			<tr>
-				<th><a>PDF</a></th>
-				<th>'Design a City for all Londoners'</th>
-				<th>City Planning, Creativity, Accessibility</th>
-			</tr>
-			<tr>
-				<th>Title</th>
-			</tr>
-			<tr>
-				<th><a>PDF</a></th>
-				<th>'Design a City for all Londoners'</th>
-				<th>City Planning, Creativity, Accessibility</th>
-			</tr>
-			<tr>
-				<th><a>PDF</a></th>
-				<th>'Design a City for all Londoners'</th>
-				<th>City Planning, Creativity, Accessibility</th>
-			</tr>
-			<tr>
-				<th><a>PDF</a></th>
-				<th>'Design a City for all Londoners'</th>
-				<th>City Planning, Creativity, Accessibility</th>
-			</tr>
-			<tr>
-				<th><a>PDF</a></th>
-				<th>'Design a City for all Londoners'</th>
-				<th>City Planning, Creativity, Accessibility</th>
-			</tr>
+		<section class="example">
+			<a href="{{ `presentation` | relURL}}">
+			<button class="contentClose" id='closeClick'></button>
+			<div class="sectionTab">
+				<h1>Greyfield Project</h1>
+			</div>
+			</a>
+		</section>
+		<section class="reaserchClose">
+			<a href="{{ $.Param `return.url` }}"><h1>{{ .Title }}<i class="fas fa-times"></i></h1></a>
+		</section>
+		<section class="researchTable">
+			<ul>
+				<li>
+					<span>Format</span><span>Title</span><span>Topic</span>
+				</li>
 
-		</table>
+				<li class="clickable">
+					<span><u>PDF</u></span><span>“Designing a City for All Londoners”</span><span><u>City Planning</u>, <u>Creativity</u>, <u>Accessibility</u></span>
+				</li>
+				<li style="display: none">conent</li>
+				
+				<li class="clickable">
+					<span>one</span><span>two</span><span>three</span>
+				</li>
+				<li style="display: none">conent</li>
+				
+				<li class="clickable">
+					<span>one</span><span>two</span><span>three</span>
+				</li>
+				<li style="display: none">conent</li>
+			</ul>
+		</section>
 	</main>
 </body>
-	<script src="{{ `js/js.js` | relURL}}"></script>
+	<script>
+		function toggleVis(event) {
+
+    if (event.target && event.target.className == 'clickable') {
+		
+        var next = event.target.nextElementSibling;
+
+
+        if (next.style.display == "none") {
+            next.style.display = "block";
+					console.log('work');
+
+        } else {
+            next.style.display = "none";
+        }
+    }
+}
+
+document.addEventListener('click', toggleVis, true);
+	</script>
 </html>
 
 
