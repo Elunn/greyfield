@@ -41,10 +41,6 @@
 				</li>
 				<li style="display: none">conent</li>
 				
-				<li class="clickable">
-					<span>one</span><span>two</span><span>three</span>
-				</li>
-				<li style="display: none">conent</li>
 			</ul>
 		</section>
 	</main>
@@ -54,15 +50,17 @@
 
     if (event.target && event.target.className == 'clickable') {
 		
-        var next = event.target.nextElementSibling;
+        var next = event.target.nextElementSibling,
+			child = event.target.children[1];
 
 
         if (next.style.display == "none") {
             next.style.display = "block";
-					console.log('work');
+			child.classList.add("highlight");
 
         } else {
             next.style.display = "none";
+			child.classList.remove("highlight");
         }
     }
 }

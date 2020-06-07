@@ -897,4 +897,7 @@ display: none
 	padding: 0 .5em;
 }
 
+.highlight {
+	color: var(--project-red);
+}
 
