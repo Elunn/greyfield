@@ -16,7 +16,6 @@
 	<main>
 		<section class="example">
 			<a href="{{ `presentation` | relURL}}">
-			<button class="contentClose" id='closeClick'></button>
 			<div class="sectionTab">
 				<h1>Greyfield Project</h1>
 			</div>
@@ -31,15 +30,7 @@
 					<span>Format</span><span>Title</span><span>Topic</span>
 				</li>
 
-				<li class="clickable">
-					<span><u>PDF</u></span><span>“Designing a City for All Londoners”</span><span><u>City Planning</u>, <u>Creativity</u>, <u>Accessibility</u></span>
-				</li>
-				<li style="display: none">conent</li>
-				
-				<li class="clickable">
-					<span>one</span><span>two</span><span>three</span>
-				</li>
-				<li style="display: none">conent</li>
+				{{.Content}}
 				
 			</ul>
 		</section>

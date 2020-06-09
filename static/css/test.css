@@ -7,7 +7,7 @@
 
 
 :root {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
 	font-size: 16px;
@@ -82,7 +82,8 @@ a:hover {
 
 .sectionTab h1{
     text-align: left;
-    font-size: 1.9em;
+	padding: .5em;
+    font-size: 1.5rem;
     text-transform: uppercase;
     width: 100vh;
     margin-bottom: 0;
@@ -100,9 +101,11 @@ a:hover {
 	}
 	
 	.sectionTab h1{
+		font-size: 1.9rem;
 		text-align: right;
 		transform: translateX(-50vh) translateX(+31px) translateY(50vh) rotate(-90deg);
 		text-align: right;
+		padding: 0;
 		padding-right: 5vh;
 		width: 100vh;
 	}
@@ -652,7 +655,7 @@ img {
 }
 
 .popoutText a {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
 	font-size: 1rem;
@@ -685,7 +688,7 @@ img {
 	scrollbar-width: none;
 }
 
-.sidePages .sectionTab {
+.sidePages .sectionTab, .research .sectionTab{
 	position: fixed;
 	bottom: 0;
 }
@@ -785,11 +788,11 @@ img {
 
 .bar {
 	position: absolute;
-	width: 80px;
+	width: 60px;
 	height: 80%;
-	right: -20px;
+	right: 0;
 	margin-bottom: 4em;
-	transform: translateX(10vw);
+	transform: translateX(150px);
 	z-index: 10000;
 	background-color: var(--project-red);
 }
@@ -804,6 +807,16 @@ img {
 .red h1 {
 	transform:translateY(80px) translateY(100%) rotate(-90deg);
 	color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+	.bar {
+		width: 80px;
+		height: 80%;
+		right: -20px;
+		margin-bottom: 4em;
+		transform: translateX(10vw);
+	}
 }
 
 /*image slider*/
@@ -833,7 +846,11 @@ display: none
   right: 0;
 }
 
-/*research tab*/
+/*-----------research presentation tab*/
+
+.research {
+	overflow-y: scroll;
+}
 
 .clickable {
 	cursor: pointer;
@@ -841,20 +858,22 @@ display: none
 
 .clickable > * {
 	z-index: -1;
-/*	 pointer-events: none;*/
 }
 
 .researchTable{
-	width: 80%;
+	width: 85%; /* table with, changes with media query*/
 	margin: auto;
-	padding-right: 80px;
+	padding-left: 20px;
+	margin-bottom: 80px;
 }
 
 .researchTable li {
+	font-size: .6rem; /* changed with media query bellow */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 2em;
+	padding: .3em 0;
 }
 
 .research li:nth-child(1) {
@@ -867,6 +886,12 @@ display: none
 
 .research li:nth-child(2) {
 	border-top: none; 
+}
+
+.clickable span:nth-child(2) {
+	padding-right: 1em;
+	font-weight: 300;
+	
 }
 
 .research ul {
@@ -890,8 +915,8 @@ display: none
 }
 
 .reaserchClose h1 {
-	padding:.5em;
-	font-size: 1.9em;
+	padding: .5em;
+	font-size: 1.2em;
 	color: var(--project-red)
 }
 
@@ -901,5 +926,30 @@ display: none
 
 .highlight {
 	color: var(--project-red);
+}
+
+.resImg img {
+	border-radius: 0;
+	height: 30vh;
+	width: auto;
+}
+
+.resImg {
+	max-height: 30vh;
+}
+
+@media screen and (min-width: 700px) {
+	.researchTable{
+		width: 80%; /* table with, changes with media query*/
+		margin: auto;
+		padding-right: 80px;
+	}
+	.reaserchClose h1 {
+		font-size: 1.9em;
+	}
+	.researchTable li {
+		font-size: .9rem; 
+	}
+	
 }
 
