@@ -883,13 +883,14 @@ display: none
 
 .reaserchClose{
 	position: fixed;
-	left: -100px;
 	height: 80px;
 	width: 100vh;
+	text-align: right;
+	transform: translateX(-50vh) translateX(+31px) translateY(35vh) rotate(-90deg);
 }
 
 .reaserchClose h1 {
-	transform:translateY(20px) translateY(100%) rotate(-90deg);
+	padding:.5em;
 	font-size: 1.9em;
 	color: var(--project-red)
 }
