@@ -14,6 +14,7 @@
 </head>
 <body class="sidePages">
 	<main>
+		<a name="top"></a>
 		<section class="example">
 			<a href="{{ `home` | relURL}}">
 			<div class="sectionTab">
@@ -33,159 +34,195 @@
 				<li><a href="#system">A System.</a></li>
 			</ul>
 		</nav>
+		<button id="nextSection" onclick="goToNextAnchor()"><i class="fas fa-chevron-down"></i></button>
 <!--intro-->
 			<section id="intro">
-				<a href="{{ `intro-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
-				<div class="section">
+				<a  name="intro" href="{{ `intro-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
+				<div>
 					<div class="imgContainer">
 						<video controls>
 							<source src="/video/Website_Test.mp4" type="video/mp4">
 						</video>
 					</div>
-					<p>INTRODUCTION</p>
+					<h3>INTRODUCTION</h3>
+					<p>The Greyfield project explores the repurpose of underused or empty buildings, as a model for enriching communities through sustainable, quality engagement in creative projects.</p>
 				</div>
-				<div class="section">
+				<div>
+					<a class="sectionAnchor" name="intro02"></a>
 					<div class="imgContainer right">
-					<img alt="Sustainability_model" src="/images/Sustainability_model4.gif">
-					</div>
-					<p class="right">INTRODUCTION: The framework we wanted to try and create a project within =  the social side of sustainability How is this different from other socially engaged community projects, Eg. Assemble in Liverpool Our USP is scalable, affordable and replicable without loosing integrity/ </p>
-				</div>
-			</section>
-<!--object-->
-			<section id="object">
-				<a href="{{ `object-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
-				<div class="section">
-					<div class="imgContainer"><img alt="Quilt_1" src="/images/Quilt_1.gif"></div>
-					<p>OBJECT: Give some detail about WKGG community and what their desires were for the future. How a continued interaction could happen between them and the RCA.  The initial thoughts about an arts committee were introduced.</p>
-				</div>
-				<div class="section">
-					<div class="imgContainer right"><img alt="Quilt_2" src="/images/Quilt_2.gif"></div>
-					<p class="right">OBJECT: Give some detail about WKGG community and what their desires were for the future. How a continued interaction could happen between them and the RCA.  The initial thoughts about an arts committee were introduced.</p>
-				</div>
-			</section>
-<!--the space-->
-			<section id="space">
-				<a href="{{ `space-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
-				<div class="section">
-					<div class="imgContainer"><img alt="identify" src="/images/identify.jpg"></div>
-					<p>SPACE: Identifying the garages as a potential space to be activated in the community, as a resource rather than housing. The ethnographic process we used to do this. Internal perspective?</p>
-				</div>
-				<div class="section">
-					<div class="imgContainer right"><img alt="Greyfield Project" src="/images/Space_1.gif"></div>
-					<p class="right">SPACE: Why the garages aren’t being used and why they are an opportunity space. INTERNAL</p>
-				</div>
-			</section>
-<!--the place-->
-			<section id="place">
-				<a href="{{ `place-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
-				<div class="section">
-					<div class="imgContainer">
 						<div class="mySlides1">
-							<img alt="Greyfield Project" src="/images/7.jpg">
+						<img src="/images/Introduction_1.gif">
 						</div>
 						<div class="mySlides1">
-							<img alt="Greyfield Project" src="/images/ArtsCommittee_model.gif">
+						<img src="/images/Introduction_2.gif">
+						</div>
+						<div class="mySlides1">
+						<img src="/images/Introduction_3.jpg">
 						</div>
 						<a class="prev" onclick="plusSlides(-1, 0)"><i class="fas fa-angle-left"></i></a>
 						<a class="next" onclick="plusSlides(1, 0)"><i class="fas fa-angle-right"></i></a>
 					</div>
-					<p>PLACE: Arts Committee was more formally organised as a group to consult/plan. Artist Residency INTERNAL</p>
+					<h3 class="right">INTRODUCTION</h3>
+					<p class="right"> The project was born from the idea of reinstating the relevance of Victor Papenek’s concept of sustainability. How can we embark on a project that addresses the social as well as material aspects of sustainability? We believe there is a 4th pillar of sustainability that needs to be added: Culture.</p>
 				</div>
-				<div class="section">
-					<div class="imgContainer right">
+			</section>
+<!--object-->
+			<section id="object">
+				<a name="object" href="{{ `object-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
+				<div>
+					<div class="imgContainer"><img alt="Quilt_1" src="/images/Quilt_1.gif"></div>
+					<h3>AN OBJECT</h3>
+					<p> The seed of this project started with The People’s Quilt, which was made with the community of West Kensington and Gibbs Green estates. It’s purpose was to explore long term mutually beneficial partnerships between institutions and communities. The relationship it formed kick started our project. </p>
+				</div>
+				<div>
+					<a class="sectionAnchor" name="object02"></a>
+					<div class="imgContainer right"><img alt="Quilt_2" src="/images/Quilt_2.gif"></div>
+					<h3 class="right">AN OBJECT</h3>
+					<p class="right"> West Kensington and Gibbs Green are an active community who after winning their 10 year long fight against demolition, now want to push for community ownership. Our project came at a time a crossroads when they wanted to ensure their united front continued. It was in response to this that the idea of an arts committee on the estates started.</p>
+				</div>
+			</section>
+<!--the space-->
+			<section id="space">
+				<a name="space" href="{{ `space-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
+				<div>
+					<div class="imgContainer">
 						<div class="mySlides2">
-							<img alt="west ken Collage" src="/images/Collage_Lightgrey.gif">
-						</div>
-						<div class="mySlides2">
-							<img alt="west ken Collage" src="/images/WestKen_brief.gif">
-						</div>
-						<div class="mySlides2">
-							<img alt="west ken Collage" src="/images/Programme_timeline.gif">
+							<img alt="identify" src="/images/identify.jpg">
 						</div>
 						<a class="prev" onclick="plusSlides(-1, 1)"><i class="fas fa-angle-left"></i></a>
 						<a class="next" onclick="plusSlides(1, 1)"><i class="fas fa-angle-right"></i></a>
 					</div>
-					<p class="right">PLACE: Artist Residency: the brief, the programme of events (timeline) EXTERNAL</p>
+					<h3>A SPACE</h3>
+					<p>We used ethnographic research methods for identifying the garages as a potential space to be activated in the community. Using the spaces as a community resource rather than housing.  We took this discovery to the arts committee to discuss what social asset they could be transformed into. It would also act as the establishing  the first</p>
 				</div>
-				<div class="section">
+				<div>
+					<a class="sectionAnchor" name="ospace02"></a>
+					<div class="imgContainer right"><img alt="Greyfield Project" src="/images/Space_1.gif"></div>
+					<p class="right">A SPACE West Kensington and Gibbs Green were built in the 1960’s. A time when more people needed access to garage as cars were less robust and more people owned their own car. This leaves garages as redundant spaces today.</p>
+				</div>
+			</section>
+<!--the place-->
+			<section id="place">
+				<a name="place" href="{{ `place-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
+				<div>
 					<div class="imgContainer">
 						<div class="mySlides3">
-							<img alt="Greyfield Project" src="/images/Model2.gif">
+							<img alt="Greyfield Project" src="/images/7.jpg">
 						</div>
 						<div class="mySlides3">
-							<img alt="Greyfield Project" src="/images/Construction_methods.gif">
-						</div>
-						<div class="mySlides3">
-							<img alt="Greyfield Project" src="/images/Place_2.gif">
-						</div>
-						<div class="mySlides3">
-							<img alt="Greyfield Project" src="/images/Place_3.gif">
+							<img alt="Greyfield Project" src="/images/ArtsCommittee_model.gif">
 						</div>
 						<a class="prev" onclick="plusSlides(-1, 2)"><i class="fas fa-angle-left"></i></a>
 						<a class="next" onclick="plusSlides(1, 2)"><i class="fas fa-angle-right"></i></a>
 					</div>
-					<p>PLACE: The furniture and how to transform space, Outreach work INTERNAL </p>
+					<h3>A PLACE</h3>
+					<p>As part of the project’s initiation an Arts Committee was more formally organised as a group to Artist Residency idea was formed RESIDENCY MODEL: EXTERNAL: Pre-Covid</p>
 				</div>
-				<div class="section">
+				<div>
+					<a class="sectionAnchor" name="palce02"></a>
 					<div class="imgContainer right">
 						<div class="mySlides4">
+							<img alt="west ken Collage" src="/images/Collage_Lightgrey.gif">
+						</div>
+						<div class="mySlides4">
+							<img alt="west ken Collage" src="/images/WestKen_brief.gif">
+						</div>
+						<div class="mySlides4">
+							<img alt="west ken Collage" src="/images/Programme_timeline.gif">
+						</div>
+						<a class="prev" onclick="plusSlides(-1, 3)"><i class="fas fa-angle-left"></i></a>
+						<a class="next" onclick="plusSlides(1, 3)"><i class="fas fa-angle-right"></i></a>
+					</div>
+					<h3 class="right">A PLACE</h3>
+					<p class="right"> RESIDENCY MODEL: EXTERNAL: Pre Covid Artist Residency: the brief, the programme of events (timeline) The furniture acts as the foundation stone for the project </p>
+				</div>
+				<div>
+					<a class="sectionAnchor" name="palce03"></a>
+					<div class="imgContainer">
+						<div class="mySlides4">
+							<img alt="Greyfield Project" src="/images/Model2.gif">
+						</div>
+						<div class="mySlides5">
+							<img alt="Greyfield Project" src="/images/Construction_methods.gif">
+						</div>
+						<div class="mySlides5">
+							<img alt="Greyfield Project" src="/images/Place_2.gif">
+						</div>
+						<div class="mySlides5">
+							<img alt="Greyfield Project" src="/images/Place_3.gif">
+						</div>
+						<a class="prev" onclick="plusSlides(-1, 4)"><i class="fas fa-angle-left"></i></a>
+						<a class="next" onclick="plusSlides(1, 4)"><i class="fas fa-angle-right"></i></a>
+					</div>
+					<p>PLACE: The furniture and how to transform space, Outreach work INTERNAL </p>
+				</div>
+				<div>
+					<a class="sectionAnchor" name="palce04"></a>
+					<div class="imgContainer right">
+						<div class="mySlides6">
 						<img src="/images/Outreach.gif">
 						</div>
 
-						<div class="mySlides4">
+						<div class="mySlides6">
 						<img src="/images/Outreach_1.gif">
 						</div>
 						
-						<div class="mySlides4">
+						<div class="mySlides6">
 						<img src="/images/Outreach_2.gif">
 						</div>
 
-						<div class="mySlides4">
+						<div class="mySlides6">
 						<img src="/images/Outreach_3.gif">
 						</div>
 
-						<div class="mySlides4">
+						<div class="mySlides6">
 						<img src="/images/Outreach_4.gif">
 						</div>
 
-						<div class="mySlides4">
+						<div class="mySlides6">
 						<img src="/images/Outreach_5.gif">
 						</div>
 						
-						<div class="mySlides4">
+						<div class="mySlides6">
 						<img src="/images/Outreach_6.gif">
 						</div>
 						
-						<div class="mySlides4">
+						<div class="mySlides6">
 						<img src="/images/Outreach_7.gif">
 						</div>
 
-						<a class="prev" onclick="plusSlides(-1, 3)"><i class="fas fa-angle-left"></i></a>
-						<a class="next" onclick="plusSlides(1, 3)"><i class="fas fa-angle-right"></i></a>
+						<a class="prev" onclick="plusSlides(-1, 5)"><i class="fas fa-angle-left"></i></a>
+						<a class="next" onclick="plusSlides(1, 5)"><i class="fas fa-angle-right"></i></a>
 					</div>
 					<p class="right">PLACE: Outreach workshops Another part of the outreach work would be working with local groups such as the youth club. Involving young people in the redesign of the garages. Introducing ideas of citizenship and being involved in your local community. These have started happening virtually during the Covid era, through online videos and workshops.</p>
 				</div>
 			</section>
 			
+<!--the system-->
+			
 			<section id="system">
-				<a href="{{ `system-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
-				<div class="section">
+				<a name="system" href="{{ `system-res` | relURL}}"><div class="bar"><div class="red"><h1>Research</h1></div></div></a>
+				<div>
 					<div class="imgContainer"><img alt="Sustainability_model" src="/images/Website.gif"></div>
 					<p>A SYSTEM: The flow diagram and model that we have created, Who is it for? Video of the website. EXTRERNAL </p>
 				</div>
-				<div class="section">
+				<div>
+					<a class="sectionAnchor" name="system02"></a>
 					<div class="imgContainer right"><img alt="Sustainability_model" src="/images/System_5.jpg"></div>
 					<p class="right">A SYSTEM:  More detailed explanation of process EXTERNAL</p>
 				</div>
-				<div class="section">
+				<div>
+					<a class="sectionAnchor" name="system03"></a>
 					<div class="imgContainer"><img alt="Sustainability_model" src="/images/System_3.gif"></div>
 					<p>A SYSTEM Examples of other places it could happen? Somerset, focus on outside London</p>
 				</div>
-				<div class="section">
+				<div>
+					<a class="sectionAnchor" name="system04"></a>
 					<div class="imgContainer right"><img alt="Sustainability_model" src="/images/Buisness_model3.gif"></div>
 					<p class="right">A SYSTEM: What are the challenges and future plans of the project EXTERNAL</p>
 				</div>
-				<div class="section">
+				<div>
+					<a name="system05"></a>
 					<div class="imgContainer"><img alt="Sustainability_model" src="/images/Sustainability_model4.gif"></div>
 					<p>A SYSTEM: To what extent does it fulfil our initial intentions?</p>
 				</div>
@@ -193,6 +230,41 @@
 		</div>
 	</main>
 </body>
+	<script type="text/javascript">
+
+function goToNextAnchor() {
+  var anchors = document.anchors;
+  var loc = window.location.href.replace(/#.*/,'');
+  var nextAnchorName;
+
+  // Get name of the current anchor from the hash
+  // if there is one
+  var anchorName = window.location.hash.replace(/#/,'');
+
+  // If there is an anchor name...
+  if (anchorName) {
+
+    // Find current element in anchor list, then
+    // get next anchor name, or if at last anchor, set to first
+    for (var i=0, iLen=anchors.length; i<iLen; i++) {
+      if (anchors[i].name == anchorName) {
+        nextAnchorName = anchors[++i % iLen].name;
+        break;
+      }
+    }
+  }
+
+  // If there was no anchorName or no match,
+  // set nextAnchorName to first anchor name
+  if (!nextAnchorName) {
+    nextAnchorName = anchors[0].name;
+  }
+
+  // Go to new URL
+  window.location.href = loc + '#' + nextAnchorName;
+}
+	
+	</script>
 	<script src="{{ `js/js.js` | relURL}}"></script>
 </html>
 

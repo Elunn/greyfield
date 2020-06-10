@@ -241,14 +241,17 @@ if (window.location.pathname === '/westken/' || window.location.pathname === '/p
 		}
 
 		window.addEventListener('scroll', fixNav);
+	
 	//image slider
 
-var slideIndex = [1,1,1,1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+var slideIndex = [1,1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"]
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -264,6 +267,40 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
+}
+
+// presentation next section buttons
+
+function goToNextAnchor() {
+  var anchors = document.anchors;
+  var loc = window.location.href.replace(/#.*/,'');
+  var nextAnchorName;
+
+  // Get name of the current anchor from the hash
+  // if there is one
+  var anchorName = window.location.hash.replace(/#/,'');
+
+  // If there is an anchor name...
+  if (anchorName) {
+
+	// Find current element in anchor list, then
+	// get next anchor name, or if at last anchor, set to first
+	for (var i=0, iLen=anchors.length; i<iLen; i++) {
+	  if (anchors[i].name == anchorName) {
+		nextAnchorName = anchors[++i % iLen].name;
+		break;
+	  }
+	}
+  }
+
+  // If there was no anchorName or no match,
+  // set nextAnchorName to first anchor name
+  if (!nextAnchorName) {
+	nextAnchorName = anchors[0].name;
+  }
+
+  // Go to new URL
+  window.location.href = loc + '#' + nextAnchorName;
 }
 
 
