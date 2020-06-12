@@ -16,6 +16,7 @@
 	--project-brown: #C0A688;
 	--project-grey-one: #E5E1E4;
 	--project-grey-two: #A6A4A1;
+	--video: #000;
 }
 
 
@@ -130,7 +131,7 @@ a:hover {
 /*secion tab colours*/
 
 .video h1{
-	color: #fff;
+	color: var(--video);
 }
 
 .how .sectionTab{
@@ -210,7 +211,7 @@ a:hover {
 .vidContent {
 	width: 100vw;
 	height: 100%; 
-	background-image: url('/images/background02.jpg');
+/*	background-image: url('/images/7.jpg');*/
 	background-position: center; 
   	background-repeat: no-repeat; 
   	background-size: cover;
@@ -235,7 +236,7 @@ a:hover {
 }
 
 #videoContainer {
-	width: 80%;
+	width: 60%;
 	max-height: 80vh;
 	overflow: hidden;
 	border-radius: 1em;
@@ -268,7 +269,7 @@ button {
 /*	font-size: 16px;*/
 	border: none;
 /*	padding-right: 2em;*/
-	color: #fff;
+	color: var(--video);
 	outline: none;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -280,7 +281,7 @@ button {
   width: 100%;
   height: 5px;
   border-radius: 5px;
-  background: #fff;
+  background: var(--video);
   outline: none;
   
 }
@@ -290,7 +291,7 @@ button {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--video);
   cursor: pointer;
 }
 
@@ -303,12 +304,12 @@ button {
 
 
 #playGroup {
-	width: 100%;
+	width: 70%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2em;
+	padding: 2em 0;
 }
 
 #seeker {
@@ -321,7 +322,7 @@ button {
 	font-weight: 900;
     display: inline-block;
     font-size: 4em;
-    color: #fff;
+    color: var(--video);
     -webkit-font-smoothing: antialiased;
 	cursor: pointer;
 	margin: 0;
@@ -334,7 +335,7 @@ button {
 	font-weight: 900;
     display: block;
 	font-size: 4em;
-    color: #fff;
+    color: var(--video);
     -webkit-font-smoothing: antialiased;
 	cursor: pointer;
 	margin: 0;

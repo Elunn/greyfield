@@ -61,3 +61,12 @@ topic_2="Creativity"
 topic_3="Diversity" 
 docLink="https://drive.google.com/file/d/175gsZvI1iNFJJL4MGAxIQNTn69gBsW32/view?usp=sharing"
 imgLink="/images/research/Good Growth.png" >}}
+
+{{< researchLi 
+type="Application" 
+docTitle="Culture Seeds Funding Application"
+topic_1="Funding"
+topic_2="Urban Planning"
+topic_3="Communities" 
+docLink="https://drive.google.com/file/d/12yPdokjSYjI88AZMrUTDJ0Jo8mx82WpR/view?usp=sharing"
+imgLink="/images/research/Culture Seeds.png" >}}
