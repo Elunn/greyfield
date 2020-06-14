@@ -114,3 +114,12 @@ topic_2="Urban Living"
 topic_3="Design" 
 docLink="https://assemblestudio.co.uk/projects/the-blue"
 imgLink="/images/research/https_assemblestudio.co.uk_projects_the-blue.jpg" >}}
+
+{{< researchLi 
+type="Political Design " 
+docTitle="Townscape and Visual Analysis* Update"
+topic_1="Town Planning"
+topic_2="Visual Heritage"
+topic_3="Development" 
+docLink="https://drive.google.com/file/d/16cPzvvV1Agd2Nwsw-VPBmCIH9aizAgD5/view?usp=sharing"
+imgLink="/images/research/View_70.png" >}}
