@@ -843,11 +843,16 @@ display: none
 	top: 50%;
 	transform: translateY(-50%);
 	width: auto;
-	color: var(--project-grey-one);
+	color: var(--project-pink);
 	font-weight: bold;
 	font-size: 3rem;
 	transition: 0.6s ease;
 	user-select: none;
+	opacity: 0.6;
+}
+
+.prev:hover, .next:hover {
+	opacity: 1;
 }
 
 /* Position the "next button" to the right */
