@@ -802,6 +802,8 @@ img {
 	transform: translateX(150px);
 	z-index: 100;
 	background-color: var(--project-red);
+	white-space: nowrap;
+
 }
 
 .red {
@@ -812,7 +814,7 @@ img {
 }
 
 .red h1 {
-	transform:translateY(80px) translateY(100%) rotate(-90deg);
+	transform:translateY(110px) translateY(100%) rotate(-90deg);
 	color: #fff;
 }
 
@@ -924,8 +926,9 @@ display: none
 .reaserchClose h1 {
 	padding: .5em;
 	font-size: 1.2em;
-	color: var(--project-red)
+	color: var(--project-red);
 }
+
 
 .reaserchClose  i {
 	padding: 0 .5em;
@@ -979,4 +982,11 @@ display: none
     text-align: center;
     vertical-align: bottom;
 	margin: 1em;
+}
+
+.sticker {
+	position: absolute;
+	top: 0;
+	width: 80px;
+	z-index: 100;
 }
