@@ -73,8 +73,7 @@ imgLink="/images/research/Culture Seeds.png" >}}
 
 {{< researchLi 
 type="Application" 
-docTitle="CULTURE AS THE FOURTH PILLAR
-OF SUSTAINABLE DEVELOPMENT"
+docTitle="CULTURE AS THE FOURTH PILLAR OF SUSTAINABLE DEVELOPMENT"
 topic_1="Design"
 topic_2="Sustainability"
 topic_3="Culture" 
