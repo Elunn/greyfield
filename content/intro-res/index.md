@@ -70,3 +70,12 @@ topic_2="Urban Planning"
 topic_3="Communities" 
 docLink="https://drive.google.com/file/d/12yPdokjSYjI88AZMrUTDJ0Jo8mx82WpR/view?usp=sharing"
 imgLink="/images/research/Culture Seeds.png" >}}
+
+{{< researchLi 
+type="Application" 
+docTitle="CULTURE AS THE FOURTH PILLAR
+OF SUSTAINABLE DEVELOPMENT"
+topic_1="Design"
+topic_2="Sustainability"
+docLink="http://sdct-journal.com/images/Issues/2015/7.pdf"
+imgLink="/images/research/culture.png" >}}
