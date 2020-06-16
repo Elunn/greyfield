@@ -77,5 +77,6 @@ docTitle="CULTURE AS THE FOURTH PILLAR
 OF SUSTAINABLE DEVELOPMENT"
 topic_1="Design"
 topic_2="Sustainability"
+topic_3="Culture" 
 docLink="http://sdct-journal.com/images/Issues/2015/7.pdf"
 imgLink="/images/research/culture.png" >}}
