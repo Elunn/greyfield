@@ -310,6 +310,12 @@ p {
 	display: block;
 }
 
+.svgDiagram {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .flowDiagram {
 	width: 80%;
 }
