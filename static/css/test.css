@@ -235,7 +235,7 @@ a:hover {
 }
 
 #videoContainer {
-	width: 60%;
+	width: 100%;
 	max-height: 80vh;
 	overflow: hidden;
 	border-radius: 1em;
@@ -249,11 +249,11 @@ a:hover {
 /*----------slide out content----------*/
 
 .content {
-	padding: 60px 180px 240px 60px;
+	padding: 1em;
 }
 
 .content > div {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	padding-top: 8vh;
 }
@@ -261,6 +261,9 @@ a:hover {
 @media screen and (min-width: 700px) {
 	.content {
 		padding: 0 180px 60px 60px;
+	}
+	.content > div {
+		width: 80%;
 	}
 }
 
@@ -345,8 +348,14 @@ form li{
 	justify-content: flex-start;
 }
 
-li input, li textarea {
+li input {
 	width: 40%;
+	min-height: 2em;
+	border: dashed 1.5px;
+}
+
+li textarea {
+	width: 100%;
 	min-height: 2em;
 	border: dashed 1.5px;
 }
@@ -370,7 +379,7 @@ li textarea {
 }
 
 #send {
-	justify-content: space-around;
+	justify-content: flex-end;
 }
 
 #send button {
@@ -410,6 +419,11 @@ table tr:nth-child(1) {
 
 tr {
 	border-bottom: solid 1.5px;
+}
+
+.contact .researchTable {
+	width: 100%;
+	padding: 0;
 }
 
 /*-----------how diagram popout-----------*/
@@ -530,7 +544,7 @@ img {
 
 .popoutContent {
 	padding-top: 15vh;
-	width: 60%;
+	width: 100%;
 	margin: auto;
 }
 
@@ -776,15 +790,15 @@ display: none
 	padding: .3em 0;
 }
 
-.research li:nth-child(1) {
+.researchTable li:nth-child(1) {
 	border-bottom: dashed 2px var(--project-grey-one); 
 }
 
-.research li:nth-child(even) {
+.researchTable li:nth-child(even) {
 	border-top: solid 1px var(--project-grey-one); 
 }
 
-.research li:nth-child(2) {
+.researchTable li:nth-child(2) {
 	border-top: none; 
 }
 
@@ -794,15 +808,15 @@ display: none
 	
 }
 
-.research ul {
+.researchTable ul {
 	border-bottom: dashed 2px var(--project-grey-one); 
 }
 
-.research li:nth-child(1) > span {
+.researchTable li:nth-child(1) > span {
 	width: 33%;
 }
 
-.research li:nth-child(even) > span {
+.researchTable li:nth-child(even) > span {
 	width: 33%;
 }
 

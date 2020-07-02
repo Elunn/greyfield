@@ -157,41 +157,18 @@
 						</ul>							
 					</form>
 					<h2>Resources</h2>
-					<table>
-						<tr>
-							<th>Link</th>
-							<th>Title</th>
-							<th>Topic</th>
-						</tr>
-						<tr>
-							<th><a>PDF</a></th>
-							<th>'Design a City for all Londoners'</th>
-							<th>City Planning, Creativity, Accessibility</th>
-						</tr>
-						<tr>
-							<th><a>PDF</a></th>
-							<th>'Design a City for all Londoners'</th>
-							<th>City Planning, Creativity, Accessibility</th>
-						</tr>
-						<tr>
-							<th><a>PDF</a></th>
-							<th>'Design a City for all Londoners'</th>
-							<th>City Planning, Creativity, Accessibility</th>
-						</tr>
-						<tr>
-							<th><a>PDF</a></th>
-							<th>'Design a City for all Londoners'</th>
-							<th>City Planning, Creativity, Accessibility</th>
-						</tr>
-						<tr>
-							<th><a>PDF</a></th>
-							<th>'Design a City for all Londoners'</th>
-							<th>City Planning, Creativity, Accessibility</th>
-						</tr>
-						
-					</table>
-					<div>
-						
+					<div class="researchTable">
+						<ul>
+							<li>
+								<span>Format</span><span>Title</span><span>Topic</span>
+							</li>
+							<li class="clickable">
+								<span><u>Policy</u></span><span>&quot;Designing a City for All Londoners&quot;</span><span><u>City Planning</u>, <u>Creativity</u>, <u>Accessibility</u></span>
+							</li>
+							<li class="tabbb" style="display: none">
+								<a class="resImg" href="https://drive.google.com/open?id=1snqbOS0U0rY99ihhmI-GAQjLQ3K7_paI" target="_blank"><img src="/images/research/Designing a city for all londers.png"></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -312,6 +289,28 @@
 		</div>
 	</main>
 </body>
+	<script>
+		function toggleVis(event) {
+
+			if (event.target && event.target.className == 'clickable') {
+
+				var next = event.target.nextElementSibling,
+					child = event.target.children[1];
+
+
+				if (next.style.display == "none") {
+					next.style.display = "block";
+					child.classList.add("highlight");
+
+				} else {
+					next.style.display = "none";
+					child.classList.remove("highlight");
+				}
+			}
+		}
+
+		document.addEventListener('click', toggleVis, true);
+	</script>
 	<script src="{{ `js/js.js` | relURL}}"></script>
 </html>
 
