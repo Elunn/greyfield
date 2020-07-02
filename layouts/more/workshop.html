@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Open+Sans&display=swap" rel="stylesheet">
+	
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="{{ `css/style.css` | relURL}}">
+    <link rel="stylesheet" href="{{ `css/reset.css` | relURL}}">
+	<link rel="icon" type="image/png" href="/images/favicon.png" />
+    <title>Greyfield</title>
+</head>
+<body>
+    <main id="videoHome">
+		<a class="pdf" href="/files/activitySheet_V8.pdf" download>Activity Sheet</a>
+		<div id="videoContainer">
+			<video id="video">
+				<source src="/video/Workshop_animation.MP4" type="video/mp4">
+			</video>
+		</div>
+		
+		<div id="playGroup">
+		<button type="button" id="playPause"></button>
+		
+		<input type="range" class="slider" id="seeker" value="0">
+		
+		<button type="button" class="button" id="fullScreen"></button>
+		</div>
+		
+		<div id="volumeGroup">
+			<button type="button" id="mute"></button>
+			<input type="range" class="slider" id="volume" min="0" max="1" step="0.1" value="1">
+		</div>
+	</main>
+</body>
+</html>
+<script src="{{ `js/script.js` | relURL}}"></script>

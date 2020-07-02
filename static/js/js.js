@@ -38,7 +38,7 @@ document.body.addEventListener('click', e => {
 
 //------Home page code
 
-if (window.location.pathname === '/home/') {
+if (window.location.pathname === '/') {
 	window.onload = function () {
 	  var video = document.getElementById('video'),
 		  seeker = document.getElementById('seeker'),
