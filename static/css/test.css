@@ -147,6 +147,8 @@ a:hover {
 
 .video .sectionTab{
 	background-image: url('/images/Space_4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .how .sectionTab{
@@ -156,11 +158,15 @@ a:hover {
 
 .contact .sectionTab{
 	background-image: url('/images/identify.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .example .sectionTab{
 	background-image: url('/images/6.jpg');
+	background-repeat: no-repeat;
 	 background-position: center;
+	background-size: cover;
 }
 
 .example {
