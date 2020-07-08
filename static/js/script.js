@@ -116,7 +116,7 @@ document.addEventListener('click', toggleDocs, true);
 var open1 = document.getElementById("identify"),
 	open2 = document.getElementById("establish"),
 	open3 = document.getElementById("programme"),
-	open4 = document.querySelector("#design"),
+	open4 = document.getElementById("design"),
 	popout1 = document.getElementById("popout1"),
 	popout2 = document.getElementById("popout2"),
 	popout3 = document.getElementById("popout3"),
@@ -148,9 +148,11 @@ open4.addEventListener("click", function(){
 var close = document.querySelector('#closeClick');
 
 close.addEventListener("click", function(){
-	popContainer.classList.add("hide");
 	popout1.classList.add("hide");
 	popout2.classList.add("hide");
+	popout3.classList.add("hide");
+	popout4.classList.add("hide");
+	popContainer.classList.add("hide");
 });
 
 

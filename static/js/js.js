@@ -47,7 +47,6 @@ if (window.location.pathname === '/') {
 			var parent = event.target.parentElement,
 				how = document.querySelector('.how'),
 				contact = document.querySelector('.contact'),
-				play = document.getElementById('playPause'),
 				video = document.getElementById('video');
 
 			if (parent.classList.contains('video')) {
@@ -57,14 +56,10 @@ if (window.location.pathname === '/') {
 			else if (parent.classList.contains('how')){
 				how.classList.remove("close");
 				contact.classList.add("close");
-				video.pause();
-				play.className = 'play';
 			} 
 			else if (parent.classList.contains('contact')){
 				how.classList.remove("close");
 				contact.classList.remove("close");
-				video.pause();
-				play.className = 'play';
 			}
 		};
 
@@ -116,6 +111,8 @@ open4.addEventListener("click", function(){
 		popContainer.classList.add("hide");
 		popout1.classList.add("hide");
 		popout2.classList.add("hide");
+		popout3.classList.add("hide");
+		popout4.classList.add("hide");
 	});
 
 

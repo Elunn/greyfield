@@ -86,7 +86,7 @@ a:hover {
 	z-index: 100;
 	position: fixed;
     width: 100vw;
-	height: 60px;
+	height: 50px;
     cursor: pointer;
 	overflow: hidden;
 }
@@ -170,8 +170,8 @@ a:hover {
 }
 
 .example {
-	height: 60px;
-	top: calc(100vh - 60px);
+	height: 50px;
+	top: calc(100vh - 50px);
 	transition: 1s,transform 1s,margin-left 0.25s;
 }
 
@@ -184,7 +184,7 @@ a:hover {
 /*section movement*/
 
 .how {
-	top: 60px;
+	top: 50px;
 	left: 0;
 	background-color: white;
 	width: 100vw;
@@ -194,7 +194,7 @@ a:hover {
 }
 
 .contact {
-	top: 120px;
+	top: 100px;
 	background-color: white;
 	width: 100vw;
 	transition: transform 1s,margin-left 0.25s;
@@ -202,7 +202,7 @@ a:hover {
 }
 
 .close {
-	transform:translateY(calc(100vh - 240px));
+	transform:translateY(calc(100vh - 200px));
 }
 
 @media screen and (min-width: 700px) {	
@@ -235,11 +235,9 @@ a:hover {
 }
 
 #videoContainer {
-	width: 100%;
 	max-height: 80vh;
 	overflow: hidden;
-	border-radius: 1em;
-	position: relative;
+	position: relative;	
 }
 
 #fadeText.fade {
@@ -492,7 +490,7 @@ tr {
 	position: fixed;
 	width: 100%;
 	color: #000;
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 1.2;
 	z-index: 200;
 }
@@ -544,13 +542,14 @@ img {
 
 .popoutContent {
 	padding-top: 15vh;
-	width: 100%;
+	width: 80%;
 	margin: auto;
 }
 
 .popoutText {
 	padding: 2em 0;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	line-height: 1.3;
 }
@@ -564,21 +563,24 @@ img {
 }
 
 .popoutText > div {
-	width: 33.33%;
-}
-
-.popoutText > div:nth-child(2) {
-	 margin: 0 3em;
+	width: 100%;
 }
 
 .popoutText h2{
 	font-size: 2em;
 }
 
-.contentHelp {
-	width: 10px;
-	height: 20000px;
-	background-image: linear-gradient(red, yellow);
+@media screen and (min-width: 850px) {
+	.popoutText > div {
+		width: 33.33%;
+	}
+
+	.popoutText > div:nth-child(2) {
+		 margin: 0 3em;
+	}
+	.popoutText {
+		flex-direction: row;
+	}
 }
 
 
@@ -897,7 +899,6 @@ display: none
 }
 
 iframe {
-	border-radius: 1.5em;
 	width: 100%;
 }
 
